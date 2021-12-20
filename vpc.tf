@@ -1,5 +1,5 @@
 variable "project_id" {
-  description = "pjt-an3-gketest-dev"
+  description = "copper-creek-334508"
 }
 
 variable "region" {
@@ -10,7 +10,7 @@ provider "google" {
   project = var.project_id
   region  = var.region
   credentials = file("/var/lib/jenkins/copper-creek-334508-74e1b1ac412a.json")
-  #credentials = file("C:/key/pjt-an3-gketest-dev-78cdd3d69f38.json")
+ 
 }
 
 
