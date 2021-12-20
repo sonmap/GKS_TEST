@@ -31,8 +31,7 @@ resource "google_container_cluster" "primary" {
   
   
   network    =  "https://www.googleapis.com/compute/v1/projects/dev-com-334508/global/networks/vpc-an3-sonmap-com"
-  #subnetwork = "https://www.googleapis.com/compute/v1/projects/vpc-share-network/regions/asia-northeast3/subnetworks/sbn-test-1"
-  subnetwork = "https://www.googleapis.com/compute/v1/projects/dev-com-334508/regions/asia-northeast1/subnetworks/sbn-an1-sonmap-gks"
+  subnetwork = "https://www.googleapis.com/compute/v1/projects/dev-com-334508/regions/asia-northeast1/subnetworks/sub-an1-sonmap-gks"
   
   #network = data.google_compute_network.network.name
   
