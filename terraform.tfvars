@@ -1,3 +1,2 @@
-project_id = "pjt-an3-gketest-dev"
-#region  = "asia-northeast3"
+project_id = "copper-creek-334508"
 region  = "asia-northeast1"
