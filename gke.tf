@@ -30,9 +30,9 @@ resource "google_container_cluster" "primary" {
   #project = "vpc-share-network"
   
   
-  network    =  "https://www.googleapis.com/compute/v1/projects/vpc-share-network/global/networks/vpc-network"
+  network    =  "https://www.googleapis.com/compute/v1/projects/dev-com-334508/global/networks/vpc-an3-sonmap-com"
   #subnetwork = "https://www.googleapis.com/compute/v1/projects/vpc-share-network/regions/asia-northeast3/subnetworks/sbn-test-1"
-  subnetwork = "https://www.googleapis.com/compute/v1/projects/vpc-share-network/regions/asia-northeast1/subnetworks/sbn-test-4"
+  subnetwork = "https://www.googleapis.com/compute/v1/projects/dev-com-334508/regions/asia-northeast1/subnetworks/sbn-an1-sonmap-gks"
   
   #network = data.google_compute_network.network.name
   
@@ -70,7 +70,7 @@ resource "google_container_node_pool" "primary_nodes" {
     # preemptible  = true
     #machine_type = "n1-standard-1"
     machine_type = "e2-standard-4"
-    tags         = ["gke-node", "${var.project_id}-gke", "sgtag-80", "sgtag-4567"]
+    tags         = ["gke-node", "${var.project_id}-gke", "sgtag-ssh-22", "sgtag-allow-elk"]
     metadata = {
       disable-legacy-endpoints = "true"
     }
